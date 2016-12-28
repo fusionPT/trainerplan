@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px 0 10px 0;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 1000px;
+  max-width: 90%; /*900px*/;
+  margin: 0 auto;
+}
+
+.list {
+
+}
+
+.list li {
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background: #f2f2f2;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+}
+
+.date {
+  font-size: 14px;
+  color: #d4d4d4 !important;
+  float: right;
+}
+
+.trainer {
+  font-size: 14px;
+  color: #777;
+  float: right;
+}
+
+/* Footer */
+
+footer {
+  padding: 20px 0 20px 0;
+  width: 1000px;
+  max-width: 90%; /*900px*/;
+  margin: 20px auto;
+}
+
+footer p {
+  font-size: 14px;
+  color: #d3d3d3;
+}
+
+/* Login */
+
+.notification {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #e0e0e0;
+}
+
+#signup, #login {
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  background: #f3f3f3;
+}
+
+input[type="text"], input[type="password"] {
+  margin: 10px;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  display: inline-block;
+}
+
+.logout {
+  display: inline-block;
+  margin: 20px 0 20px 10px;
+  color: #3e3e3e;
+}
+
+/* Workouts */
+.workout {
+  padding: 10px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.workout h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.workout p {
+  color: #3e3e3e;
+}
