@@ -1,12 +1,12 @@
 <?php
-
-//db connection
 require_once('inc/db.php');
-//import functions.php
-require_once('inc/functions.php');
-
-//Include header.php
 include("inc/header.php");
+
+if(isset($_SESSION['userna'])){
+    echo "<div class='notification'>You are already logged in! Go to your <a href='index.php'>dashboard</a></div>";
+  } else {
+    echo "<p class='notification'>Please log in or <a href='signup.php'>Sign Up</a></p>";
+  }
 ?>
 
     <div class="content">

@@ -1,8 +1,3 @@
-<?php
-//import functions.php
-include('functions.php');
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,11 +7,4 @@ include('functions.php');
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <h1>TrainerPlan</h1>
-      <ul class="user">
-        <li><a href="#" class="notification">Notification</a></li>
-        <li><a href="#" class="user"><?php checkSession('userna'); ?></a></li>
-      </ul>
-    </header>
-    <div class="main-container">
+    <div class="container">

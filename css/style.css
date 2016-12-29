@@ -1,9 +1,7 @@
-/* line 1, ../scss/style.scss */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* line 5, ../scss/style.scss */
 body {
   font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
@@ -12,63 +10,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 13, ../scss/style.scss */
 h1 {
   font-size: 24px;
   font-weight: 600;
 }
 
-/* line 18, ../scss/style.scss */
 h2 {
   font-weight: 600;
   font-size: 24px;
   margin: 10px 0 10px 0;
 }
 
-/* line 24, ../scss/style.scss */
 a {
   font-weight: 600;
   text-decoration: none;
 }
 
-/* line 29, ../scss/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* Header */
-/* line 39, ../scss/style.scss */
-header {
-  background: #F74343;
-  color: #fff;
-  overflow: hidden;
-  height: 50px;
-}
-/* line 46, ../scss/style.scss */
-header h1 {
-  float: left;
-  text-indent: -999px;
-  background: url("../images/trainer-logo.svg") no-repeat 0 0;
-  width: 113px;
-  height: 23px;
-  margin: 12px 0 0 14px;
-}
-/* line 55, ../scss/style.scss */
-header ul {
-  float: right;
-  margin: 17px 20px 0 0;
-}
-/* line 60, ../scss/style.scss */
-header li {
-  display: inline-block;
-  text-decoration: none;
-}
-/* line 65, ../scss/style.scss */
-header a {
-  color: #fff;
+.container {
+  width: 1000px;
+  max-width: 90%; /*900px*/;
+  margin: 0 auto;
 }
 
-/* line 74, ../scss/style.scss */
+.list {
+
+}
+
 .list li {
   padding: 10px;
   margin: 10px 0 10px 0;
@@ -78,14 +49,12 @@ header a {
   overflow: hidden;
 }
 
-/* line 83, ../scss/style.scss */
 .date {
   font-size: 14px;
   color: #d4d4d4 !important;
   float: right;
 }
 
-/* line 89, ../scss/style.scss */
 .trainer {
   font-size: 14px;
   color: #777;
@@ -93,46 +62,42 @@ header a {
 }
 
 /* Footer */
-/* line 97, ../scss/style.scss */
+
 footer {
   padding: 20px 0 20px 0;
   width: 1000px;
-  max-width: 90%;
-  /*900px*/
+  max-width: 90%; /*900px*/;
   margin: 20px auto;
 }
 
-/* line 104, ../scss/style.scss */
 footer p {
   font-size: 14px;
   color: #d3d3d3;
 }
 
 /* Login */
-/* line 111, ../scss/style.scss */
+
 .notification {
-  display: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #e0e0e0;
 }
 
-/* line 115, ../scss/style.scss */
 #signup, #login {
   padding: 20px;
   margin: 20px 0 20px 0;
   background: #f3f3f3;
 }
 
-/* line 121, ../scss/style.scss */
 input[type="text"], input[type="password"] {
   margin: 10px;
   display: inline-block;
 }
 
-/* line 126, ../scss/style.scss */
 input[type="submit"] {
   display: inline-block;
 }
 
-/* line 130, ../scss/style.scss */
 .logout {
   display: inline-block;
   margin: 20px 0 20px 10px;
@@ -140,21 +105,18 @@ input[type="submit"] {
 }
 
 /* Workouts */
-/* line 137, ../scss/style.scss */
 .workout {
   padding: 10px;
   background: #f8f8f8;
   overflow: hidden;
 }
 
-/* line 143, ../scss/style.scss */
 .workout h3 {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-/* line 149, ../scss/style.scss */
 .workout p {
   color: #3e3e3e;
 }
