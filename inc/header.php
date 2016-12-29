@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-
-=======
 <?php
 //import functions.php
 include('functions.php');
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,4 +19,3 @@ include('functions.php');
       </ul>
     </header>
     <div class="main-container">
->>>>>>> parent of 1a6880e... Revert "added files to include"
