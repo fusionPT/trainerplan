@@ -1,5 +1,11 @@
 <?php
+//db connection
 require_once('inc/db.php');
+//import functions.php
+require_once('inc/functions.php');
+//Include header.php
+include("inc/header.php");
+//get slug
 $a_id = $_GET['athlete'];
 // Query
 $trainer_user = json_encode($_SESSION['userna']);
@@ -13,19 +19,8 @@ JOIN athletes ON exercises.athleteID=athletes.a_id WHERE athletes.a_id=$a_id
 
 $result = mysqli_query($conn, $sql);
 $result2 = mysqli_query($conn, $sql2);
-
 $row = mysqli_fetch_assoc($result);
 
-include("inc/header.php");
-//Check if there's a session
-if(isset($_SESSION['userna'])){
-  echo "<div class='notification'>Welcome, " . $_SESSION['userna'].'</div>';
-
-} else {
-    header('Location: login.php');
-    echo 'Session name: ' . $_SESSION['userna'];
-}
-//Include header.php
 
 ?>
     <a href="athletes.php">< back</a>

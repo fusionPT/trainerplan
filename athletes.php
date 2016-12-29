@@ -1,24 +1,11 @@
 <?php
+
+//db connection
 require_once('inc/db.php');
 
-// Query
-$trainer_user = json_encode($_SESSION['userna']);
-$sql = "SELECT * FROM trainers
-JOIN athletes ON athletes.trainerID=trainers.t_id WHERE trainers.username=$trainer_user";
+include('inc/header.php');
 
-$result = mysqli_query($conn, $sql);
-
-include("inc/header.php");
-//Check if there's a session
-if(isset($_SESSION['userna'])){
-  echo "<div class='notification'>Welcome, " . $_SESSION['userna'].'</div>';
-
-} else {
-    header('Location: login.php');
-    echo 'Session name: ' . $_SESSION['userna'];
-}
-//Include header.php
-
+//checkSession('userna');
 
 ?>
 
