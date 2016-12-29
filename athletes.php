@@ -1,24 +1,20 @@
 <?php
-require_once('inc/db.php');
 
-// Query
-$trainer_user = json_encode($_SESSION['userna']);
-$sql = "SELECT * FROM trainers
-JOIN athletes ON athletes.trainerID=trainers.t_id WHERE trainers.username=$trainer_user";
-
+<<<<<<< HEAD
 $result = mysqli_query($conn, $sql);
 
 
 //Check if there's a session
 if(isset($_SESSION['userna'])){
   echo "<div class='notification'>Welcome, " . $_SESSION['userna'].'</div>';
+=======
+//db connection
+require_once('inc/db.php');
+>>>>>>> parent of 1a6880e... Revert "added files to include"
 
-} else {
-    header('Location: login.php');
-    echo 'Session name: ' . $_SESSION['userna'];
-}
-//Include header.php
+include('inc/header.php');
 
+//checkSession('userna');
 
 ?>
 <!DOCTYPE html>
