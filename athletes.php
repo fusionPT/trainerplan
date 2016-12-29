@@ -8,7 +8,7 @@ JOIN athletes ON athletes.trainerID=trainers.t_id WHERE trainers.username=$train
 
 $result = mysqli_query($conn, $sql);
 
-include("inc/header.php");
+
 //Check if there's a session
 if(isset($_SESSION['userna'])){
   echo "<div class='notification'>Welcome, " . $_SESSION['userna'].'</div>';
@@ -21,7 +21,16 @@ if(isset($_SESSION['userna'])){
 
 
 ?>
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trainer Plan</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
     <ul class="list">
       <h2>Your Athletes</h2>
     <?php
@@ -40,6 +49,6 @@ if(isset($_SESSION['userna'])){
           }
           $conn->close();
           ?>
-    </ul>
+    </ul><!-- end of list -->
     <a href="inc/logout.php" class="logout">Log Out</a>
 <?php include("inc/footer.php"); ?>
