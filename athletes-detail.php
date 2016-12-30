@@ -3,8 +3,7 @@
 require_once('inc/db.php');
 //import functions.php
 require_once('inc/functions.php');
-//Include header.php
-include("inc/header.php");
+
 //get slug
 $a_id = $_GET['athlete'];
 // Query
@@ -21,17 +20,10 @@ $result = mysqli_query($conn, $sql);
 $result2 = mysqli_query($conn, $sql2);
 $row = mysqli_fetch_assoc($result);
 
-
+checkSession('userna');
+$pageTitle = "athletes-detail";
+include("inc/header-detail.php");
 ?>
-    <a href="athletes.php">< back</a>
-    <h2>Athlete: <?php echo $row['a_name'] ?></h2>
-
-    <ul class="details">
-
-      <li><?php echo 'Email: ' . $row['email']?></li>
-      <li><?php echo 'Member since: ' . $row['a_date']?></li>
-
-    </ul>
 
     <div class="list">
 
@@ -53,6 +45,6 @@ $row = mysqli_fetch_assoc($result);
               ?>
       </ul>
 
-    </div>
-    <a href="inc/logout.php" class="logout">Log Out</a>
+    </div><!-- End of list -->
+
 <?php include("inc/footer.php"); ?>
