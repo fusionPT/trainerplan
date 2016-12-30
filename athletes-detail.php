@@ -6,17 +6,11 @@ require_once('inc/functions.php');
 
 //get slug
 $a_id = $_GET['athlete'];
-// Query
-$trainer_user = json_encode($_SESSION['userna']);
-$sql = "SELECT * FROM athletes
-LEFT JOIN exercises ON athletes.a_id=exercises.athleteID WHERE athletes.a_id=$a_id
-";
 
 $sql2 = "SELECT * FROM exercises
 JOIN athletes ON exercises.athleteID=athletes.a_id WHERE athletes.a_id=$a_id
 ";
 
-$result = mysqli_query($conn, $sql);
 $result2 = mysqli_query($conn, $sql2);
 $row = mysqli_fetch_assoc($result);
 
