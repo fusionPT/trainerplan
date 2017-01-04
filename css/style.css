@@ -157,7 +157,7 @@ header a {
 }
 
 /* Athlete detail */
-/* line 158, ../scss/style.scss */
+/* line 161, ../scss/style.scss */
 .athletes-detail .list li {
   width: 135px;
   height: 135px;
@@ -167,12 +167,12 @@ header a {
   margin-right: -1px;
   font-size: 14px;
 }
-/* line 167, ../scss/style.scss */
+/* line 170, ../scss/style.scss */
 .athletes-detail .list a {
   padding: 0;
   line-height: 1;
 }
-/* line 171, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .athletes-detail .list .date {
   float: none;
   line-height: 14px;
@@ -180,7 +180,7 @@ header a {
 }
 
 /* Athlete workout detail */
-/* line 185, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .workout .date {
   font-size: 14px;
   opacity: .5;
@@ -188,7 +188,7 @@ header a {
 }
 
 /* Footer */
-/* line 194, ../scss/style.scss */
+/* line 197, ../scss/style.scss */
 footer {
   padding: 20px 0 20px 0;
   width: 1000px;
@@ -197,35 +197,35 @@ footer {
   margin: 20px auto;
 }
 
-/* line 201, ../scss/style.scss */
+/* line 204, ../scss/style.scss */
 footer p {
   font-size: 14px;
   color: #d3d3d3;
 }
 
 /* Login */
-/* line 208, ../scss/style.scss */
+/* line 211, ../scss/style.scss */
 .notification {
   display: none;
 }
 
-/* line 212, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 #signup, #login {
   margin: 20px 0 40px 0;
 }
 
-/* line 218, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 select {
   margin: 10px 0 20px 0;
 }
 
-/* line 222, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 label {
   display: inline-block;
   opacity: .5;
 }
 
-/* line 227, ../scss/style.scss */
+/* line 230, ../scss/style.scss */
 input[type="text"], input[type="password"] {
   margin: 10px 0 10px 0;
   padding: 10px;
@@ -237,7 +237,7 @@ input[type="text"], input[type="password"] {
   font-size: 1em;
 }
 
-/* line 238, ../scss/style.scss */
+/* line 241, ../scss/style.scss */
 input[type="submit"] {
   display: inline-block;
   background: #F74343;
@@ -253,7 +253,7 @@ input[type="submit"] {
   margin-top: 10px;
 }
 
-/* line 253, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .logout {
   display: inline-block;
   margin: 20px 0 20px 10px;
@@ -261,14 +261,14 @@ input[type="submit"] {
 }
 
 /* Workouts */
-/* line 261, ../scss/style.scss */
+/* line 264, ../scss/style.scss */
 .workout {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
 /* Athlete detail */
-/* line 269, ../scss/style.scss */
+/* line 272, ../scss/style.scss */
 .back {
   float: left;
   line-height: 50px;
@@ -279,7 +279,7 @@ input[type="submit"] {
   margin-top: 14px;
 }
 
-/* line 279, ../scss/style.scss */
+/* line 282, ../scss/style.scss */
 .user-bar {
   background: #FFFFFF;
   border: 1px solid #E1E1E1;
@@ -287,49 +287,64 @@ input[type="submit"] {
   margin-bottom: 20px;
   padding: 0 18px 0 15px;
 }
-/* line 286, ../scss/style.scss */
+/* line 289, ../scss/style.scss */
 .user-bar .user-details {
   float: left;
 }
-/* line 289, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 .user-bar .user-menu {
   float: right;
 }
-/* line 292, ../scss/style.scss */
+/* line 295, ../scss/style.scss */
 .user-bar .user-menu li {
   float: left;
   display: inline-block;
   line-height: 50px;
   margin-right: 20px;
 }
-/* line 298, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 .user-bar .user-menu li:last-child {
   margin-right: 0;
 }
-/* line 303, ../scss/style.scss */
+/* line 306, ../scss/style.scss */
 .user-bar .user-menu a {
   color: #A6A6A6;
   font-weight: 600;
 }
-/* line 310, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .user-bar .avatar {
   margin-top: 6px;
 }
-/* line 313, ../scss/style.scss */
+/* line 317, ../scss/style.scss */
 .user-bar h3 {
   display: inline-block;
   line-height: 50px;
   margin-left: 12px;
 }
 
+/* line 325, ../scss/style.scss */
+li.today {
+  background: #3895FF;
+  color: #fff;
+}
+/* line 328, ../scss/style.scss */
+li.today p.date {
+  color: #fff !important;
+  font-weight: 600;
+}
+/* line 332, ../scss/style.scss */
+li.today a {
+  color: #fff;
+}
+
 /* Signup page */
-/* line 323, ../scss/style.scss */
+/* line 339, ../scss/style.scss */
 .athletes-signup {
   float: left;
   width: 50%;
 }
 
-/* line 328, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .trainers-signup {
   float: left;
   width: 50%;

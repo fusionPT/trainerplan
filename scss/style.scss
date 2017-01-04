@@ -147,6 +147,9 @@ header {
     color: #777;
     float: right;
   }
+  p {
+    
+  }
 }
 
 /* Athlete detail */
@@ -310,12 +313,25 @@ input[type="submit"] {
   .avatar {
     margin-top: 6px;
   }
+
   h3 {
     display: inline-block;
     line-height: 50px;
     margin-left: 12px;
   }
 
+}
+
+li.today {
+  background: #3895FF;
+  color: #fff;
+  p.date {
+    color: #fff !important;
+    font-weight: 600;
+  }
+  a {
+    color: #fff;
+  }
 }
 
 /* Signup page */
