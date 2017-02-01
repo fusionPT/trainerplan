@@ -4,7 +4,7 @@ if(isset($_SESSION['userna'])){
 } else {
   $user_msg = 'Please <a href="login.php">log in</a>';
 }
-
+$a_id = $_GET['athlete'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ if(isset($_SESSION['userna'])){
   <body class="<?php echo $pageTitle ?>">
     <header>
 
-      <h1>TrainerPlan</h1>
+      <a href="/trainerplan-app/athletes.php"><h1>TrainerPlan</h1></a>
       <ul class="user">
         <li><a href="#" class="notification">Notification</a></li>
         <li><a href="inc/logout.php">Log Out</a></li>
@@ -30,7 +30,7 @@ if(isset($_SESSION['userna'])){
       <div class="user-bar">
 
         <div class="user-details">
-          <a class="back" href="javascript:history.go(-1)">Go Back</a>
+          <a class="back" href="javascript:goBack();">Go Back</a>
           <img class="avatar" src="images/avatar.png" alt="avatar" />
           <h3><?php echo $row['a_name'] ?></h3>
         </div><!-- End of user-details -->

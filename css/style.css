@@ -60,7 +60,7 @@ a:hover {
 
 /* line 59, ../scss/style.scss */
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -155,32 +155,121 @@ header a {
   color: #777;
   float: right;
 }
+/* line 153, ../scss/style.scss */
+.list li.week {
+  width: 100% !important;
+  height: 34px !important;
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #c3c3c3;
+}
+/* line 161, ../scss/style.scss */
+.list li.day {
+  height: 44px !important;
+  background: none;
+  border: none;
+  text-align: center;
+}
 
 /* Athlete detail */
-/* line 161, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
+.athletes-detail .workout-item {
+  display: inline-block;
+  padding: 5px 6px 5px 6px !important;
+  margin: 2px 0 2px 0;
+  background: #e4e4e4;
+  border-radius: 4px;
+}
+/* line 182, ../scss/style.scss */
+.athletes-detail .list .add-workout {
+  font-size: 12px;
+  color: #c6c6c6;
+  position: absolute;
+  bottom: 10px;
+}
+/* line 188, ../scss/style.scss */
 .athletes-detail .list li {
-  width: 135px;
+  width: calc(100%/7);
   height: 135px;
   padding: 10px;
   float: left;
   margin: 0;
   margin-right: -1px;
   font-size: 14px;
+  position: relative;
 }
-/* line 170, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .athletes-detail .list a {
   padding: 0;
   line-height: 1;
 }
-/* line 174, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .athletes-detail .list .date {
   float: none;
   line-height: 14px;
   font-size: 12px;
 }
+/* line 208, ../scss/style.scss */
+.athletes-detail .list .calendar {
+  overflow: hidden;
+}
+
+/* line 216, ../scss/style.scss */
+.cal-nav {
+  display: inline-block;
+  position: relative;
+  padding: 10px 0;
+  width: 900px;
+}
+
+/* line 223, ../scss/style.scss */
+.cal-nav h3 {
+  float: left;
+  color: #777;
+}
+
+/* line 228, ../scss/style.scss */
+.cal-nav div {
+  float: right;
+  color: #777;
+}
+
+/* line 233, ../scss/style.scss */
+.cal-nav span {
+  margin-right: 15px;
+  padding-top: 5px;
+}
+
+/* line 238, ../scss/style.scss */
+.cal-nav a {
+  font-family: "Courier New", Courier, monospace;
+  float: right;
+  color: #777;
+  margin-top: -5px;
+}
+
+/* line 245, ../scss/style.scss */
+.cal-nav a.next {
+  margin-left: 5px;
+}
+
+/* line 248, ../scss/style.scss */
+.cal-nav a.next, .cal-nav a.prev {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: solid 1px #d4d4d4;
+  border-radius: 3px;
+  background-color: #EAEAEA;
+}
+
+/* line 256, ../scss/style.scss */
+.cal-nav a.next:hover, .cal-nav a.prev:hover {
+  background-color: #E4E4E4;
+}
 
 /* Athlete workout detail */
-/* line 188, ../scss/style.scss */
+/* line 264, ../scss/style.scss */
 .workout .date {
   font-size: 14px;
   opacity: .5;
@@ -188,7 +277,7 @@ header a {
 }
 
 /* Footer */
-/* line 197, ../scss/style.scss */
+/* line 274, ../scss/style.scss */
 footer {
   padding: 20px 0 20px 0;
   width: 1000px;
@@ -197,36 +286,36 @@ footer {
   margin: 20px auto;
 }
 
-/* line 204, ../scss/style.scss */
+/* line 281, ../scss/style.scss */
 footer p {
   font-size: 14px;
   color: #d3d3d3;
 }
 
 /* Login */
-/* line 211, ../scss/style.scss */
+/* line 288, ../scss/style.scss */
 .notification {
   display: none;
 }
 
-/* line 215, ../scss/style.scss */
+/* line 292, ../scss/style.scss */
 #signup, #login {
   margin: 20px 0 40px 0;
 }
 
-/* line 221, ../scss/style.scss */
+/* line 298, ../scss/style.scss */
 select {
   margin: 10px 0 20px 0;
 }
 
-/* line 225, ../scss/style.scss */
+/* line 302, ../scss/style.scss */
 label {
   display: inline-block;
   opacity: .5;
 }
 
-/* line 230, ../scss/style.scss */
-input[type="text"], input[type="password"] {
+/* line 307, ../scss/style.scss */
+input[type="text"], input[type="password"], textarea {
   margin: 10px 0 10px 0;
   padding: 10px;
   background: #FFFFFF;
@@ -237,7 +326,7 @@ input[type="text"], input[type="password"] {
   font-size: 1em;
 }
 
-/* line 241, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 input[type="submit"] {
   display: inline-block;
   background: #F74343;
@@ -253,7 +342,7 @@ input[type="submit"] {
   margin-top: 10px;
 }
 
-/* line 256, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 .logout {
   display: inline-block;
   margin: 20px 0 20px 10px;
@@ -261,14 +350,14 @@ input[type="submit"] {
 }
 
 /* Workouts */
-/* line 264, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
 .workout {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
 /* Athlete detail */
-/* line 272, ../scss/style.scss */
+/* line 350, ../scss/style.scss */
 .back {
   float: left;
   line-height: 50px;
@@ -279,7 +368,7 @@ input[type="submit"] {
   margin-top: 14px;
 }
 
-/* line 282, ../scss/style.scss */
+/* line 360, ../scss/style.scss */
 .user-bar {
   background: #FFFFFF;
   border: 1px solid #E1E1E1;
@@ -287,64 +376,68 @@ input[type="submit"] {
   margin-bottom: 20px;
   padding: 0 18px 0 15px;
 }
-/* line 289, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 .user-bar .user-details {
   float: left;
 }
-/* line 292, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .user-bar .user-menu {
   float: right;
 }
-/* line 295, ../scss/style.scss */
+/* line 373, ../scss/style.scss */
 .user-bar .user-menu li {
   float: left;
   display: inline-block;
   line-height: 50px;
   margin-right: 20px;
 }
-/* line 301, ../scss/style.scss */
+/* line 379, ../scss/style.scss */
 .user-bar .user-menu li:last-child {
   margin-right: 0;
 }
-/* line 306, ../scss/style.scss */
+/* line 384, ../scss/style.scss */
 .user-bar .user-menu a {
   color: #A6A6A6;
   font-weight: 600;
 }
-/* line 313, ../scss/style.scss */
+/* line 391, ../scss/style.scss */
 .user-bar .avatar {
   margin-top: 6px;
 }
-/* line 317, ../scss/style.scss */
+/* line 395, ../scss/style.scss */
 .user-bar h3 {
   display: inline-block;
   line-height: 50px;
   margin-left: 12px;
 }
 
-/* line 325, ../scss/style.scss */
+/* line 403, ../scss/style.scss */
 li.today {
   background: #3895FF;
   color: #fff;
 }
-/* line 328, ../scss/style.scss */
+/* line 407, ../scss/style.scss */
+li.today .workout-item {
+  background: #1075C6;
+}
+/* line 411, ../scss/style.scss */
 li.today p.date {
   color: #fff !important;
   font-weight: 600;
 }
-/* line 332, ../scss/style.scss */
+/* line 415, ../scss/style.scss */
 li.today a {
   color: #fff;
 }
 
 /* Signup page */
-/* line 339, ../scss/style.scss */
+/* line 422, ../scss/style.scss */
 .athletes-signup {
   float: left;
   width: 50%;
 }
 
-/* line 344, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .trainers-signup {
   float: left;
   width: 50%;

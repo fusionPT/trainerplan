@@ -27,7 +27,7 @@ if ($result2->num_rows > 0) {
   // output data of each row
   while($a = $result2->fetch_assoc()) {
 	 $dt = date('Y-m-d', strtotime($a['e_date']));
-	 $data_array[$dt] = '<a href=workout-detail.php?workout=' . $a['e_id'] .'>' . $a['exercise']. '</a>';
+	 $data_array[$dt][] = '<a class="workout-item" href=workout-detail.php?workout=' . $a['e_id'] .'>' . $a['exercise']. '</a>';
   }
 } else {
   echo "There are no workouts";
@@ -60,20 +60,20 @@ $weeks = getIsoWeeksInYear($year);
 $athlete = (isset($_GET['athlete'])) ? $_GET['athlete'] : 0;
 
 
-if (($week + $week_row) > $weeks) {
-    $next_week = (($week + $week_row) - $weeks);
+if (($week + 1) > $weeks) {
+    $next_week = (($week + 1) - $weeks);
 	$next_year = $year + 1;
 
-	$prev_week =  (($week - $week_row) < 1) ? $weeks : ($week - $week_row);
-	$prev_year = (($week - $week_row) < 1) ? $year-1 : $year;
+	$prev_week =  (($week - 1) < 1) ? $weeks : ($week - 1);
+	$prev_year = (($week - 1) < 1) ? $year-1 : $year;
 
 } else {
-	$next_week = ($week + $week_row);
+	$next_week = ($week + 1);
 	$next_year = $year;
 
-	$prev_year = (($week - $week_row) < 1) ? $year-1 : $year;
+	$prev_year = (($week - 1) < 1) ? $year-1 : $year;
 	$prev_year_weeks = getIsoWeeksInYear($prev_year);
-	$prev_week = (($week - $week_row) < 1) ? ($prev_year_weeks + ($week - $week_row)) : ($week - $week_row);
+	$prev_week = (($week - 1) < 1) ? ($prev_year_weeks + ($week - 1)) : ($week - 1);
 }
 
 ?>
@@ -137,11 +137,11 @@ if (($week + $week_row) > $weeks) {
 					$d = strtotime($year ."W". $wk1 . $day);
 
 					$dbdate = date('Y-m-d', $d);
-					$link = isset($data_array[$dbdate]) ? $data_array[$dbdate] : '';
+					$link = isset($data_array[$dbdate]) ? join($data_array[$dbdate], '<br />') : '';
 
 					$today_cls = ($dbdate == date('Y-m-d')) ? ' class="today"' : '';
 
-					echo '<li'.$today_cls.'><p class="date">'. date('d', $d) .'<p>'.$link.'</li>';
+					echo '<li'.$today_cls.'><p class="date">'. date('d', $d) .'</p>'.$link.'<p><a class="add-workout" href=add-workout.php?athlete='.$athlete.'&date='.$dbdate.'>Add</a></p></li>';
 
 
 				}

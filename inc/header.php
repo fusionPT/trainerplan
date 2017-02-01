@@ -16,7 +16,7 @@ if(isset($_SESSION['userna'])){
   </head>
   <body class="<?php echo $pageTitle ?>">
     <header>
-      <h1>TrainerPlan</h1>
+      <a href="/trainerplan-app/athletes.php"><h1>TrainerPlan</h1></a>
       <ul class="user">
         <li><a href="#" class="notification">Notification</a></li>
         <li><a href="inc/logout.php">Log Out</a></li>
