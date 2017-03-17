@@ -1,11 +1,11 @@
 <?php
 session_start();
-//$user = json_encode($_SESSION['userna']);
+
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$servername = $url["host"];
-$username = $url["host"];
+$server = $url["host"];
+$username = $url["user"];
 $password = $url["pass"];
-$dbname = substr($url["path"], 1);
+$db = substr($url["path"], 1);
 
 $config = array(
     'host' => $server ,
@@ -14,8 +14,9 @@ $config = array(
     'db' => $db
 );
 
+
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($server, $username, $password, $db);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
